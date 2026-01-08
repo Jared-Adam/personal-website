@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  # title: "Jared Adam"
+  navbar:
+    search: true
+    title: false
+    #logo: logo/trynow.jpg
+    #logo-alt: "Jared Adam"
+    background: "#d8dfd8"
+    pinned: false
+    left:
+      - href: index.qmd
+        text: Jared Adam
+    right:
+      - href: aboutme.qmd
+        text: "About Me"
+      - href: research.qmd
+        text: Research
+      - text: "CV"
+        href: Jared.Adam.CV.pdf
+      # - href: teaching.qmd
+        # text: Teaching     
+      - text: "R Tutorial"
+        href: https://jared-adam.github.io/R-Tutorial/
+      - text: "Photos"
+        menu:
+        - text: "Research photos"
+          href: photos.qmd
+        - text: "Personal photos"
+          href: personalphotos.qmd
+      - text: "Example Presentation"
+        href: EasternESA.pdf
+      - text: "Master's Defense Recording"
+        href: https://psu.mediaspace.kaltura.com/media/Jared+Adam%27s+Personal+Meeting+Room/1_6c58r3jx
+      - icon: github
+        href: https://github.com/Jared-Adam
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jared-adam-24b107241/
+  page-footer:
+      "Copyright 2026, Jared Adam. Made with [Quarto](https://quarto.org). JSAdam0809 [at] gmail [dot] com"
+
+format:
+  html:
+    theme:
+    # - _light.scss
+      - yeti 
+    css: style.css
+      #toc: true
+      # light: flatly
+      # dark: darkly    
+# mainfont: Nunito sans
