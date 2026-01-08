@@ -1,7 +1,5 @@
 ---
-title: "ResearchExperience"
-about:
-  template: jolla
+title: "Research Experience"
 ---
 
 
@@ -9,18 +7,24 @@ about:
 
 ## Education 
 
+::: {.container}
+::: {.custom-box}
+
 <img src="Montana State University.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **PhD Land Resources and Environmental Sciences**, 2024-present - *Montana State University*
 
 <img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **MSc Entomology**, 2022-2024 - *The Pennsylvania State University*
 
 <img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **BS Agroecology**, 2015-2019 - *The Pennsylvania State University* 
 
+:::
+:::
+
 My master's thesis with Dr. John Tooker ([Tooker lab](https://ento.psu.edu/research/labs/john-tooker)) broadly focused on Integrated Pest Management within conventional row crops. Please see the link to my defense for more information. The most notable project I am still active on (as of 2025) is called the Common Experiment 2 ([CE2](https://www.precisionsustainableag.org/ce2)) which is presently funded by a Precision Sustainable Agriculture grant through the USDA. The focus of this project is pest management of insects, weeds, and disease within conventional corn production and includes 16 collaborating Universities spanning the Southern to Midwestern US from Texas to Vermont. Within this project, my responsibilities include, but are not limited to, serving as the immediate contact for protocol/ entomology-based questions, managing the data flow and analyses for all entomology-related data from all collaborators, and working with the other project leads on the synthesis of each respective discipline. 
 
 
 
 
-<div class="box">
+<div class = "content-box">
 
 **Montana State University** 2024-present
 

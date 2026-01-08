@@ -173,3 +173,39 @@ div.gradient-text {
   padding-right: 0em;
   
 }
+
+/*  Link colors */
+
+$box-bg-color:  whitesmoke !default;
+$box-border-color: lightgray !default;
+$hover-color: lightslategray !default;
+$link-color:  steelblue !default;
+
+/*making objects, like a box with specified colors */
+
+.test {
+  border: 2px solid #3498db; /* Blue border */
+  background-color: #ecf0f1; /* Light background */
+  padding: 1em;            /* Inner spacing */
+  margin: 1em 0;           /* Spacing above and below the box */
+  border-radius: 5px;      /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container {
+  position: relative;
+  height: 50vh;
+}
+
+.custom-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  border: 2px solid #3498db; /* Blue border */
+  background-color: #ecf0f1; /* Light background */
+  padding: 1em;            /* Inner spacing */
+  margin: 1em 0;           /* Spacing above and below the box */
+  border-radius: 5px;      /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
