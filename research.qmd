@@ -1,0 +1,61 @@
+---
+title: "ResearchExperience"
+about:
+  template: jolla
+---
+
+
+
+
+## Education 
+
+<img src="Montana State University.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **PhD Land Resources and Environmental Sciences**, 2024-present - *Montana State University*
+
+<img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **MSc Entomology**, 2022-2024 - *The Pennsylvania State University*
+
+<img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> **BS Agroecology**, 2015-2019 - *The Pennsylvania State University* 
+
+My master's thesis with Dr. John Tooker ([Tooker lab](https://ento.psu.edu/research/labs/john-tooker)) broadly focused on Integrated Pest Management within conventional row crops. Please see the link to my defense for more information. The most notable project I am still active on (as of 2025) is called the Common Experiment 2 ([CE2](https://www.precisionsustainableag.org/ce2)) which is presently funded by a Precision Sustainable Agriculture grant through the USDA. The focus of this project is pest management of insects, weeds, and disease within conventional corn production and includes 16 collaborating Universities spanning the Southern to Midwestern US from Texas to Vermont. Within this project, my responsibilities include, but are not limited to, serving as the immediate contact for protocol/ entomology-based questions, managing the data flow and analyses for all entomology-related data from all collaborators, and working with the other project leads on the synthesis of each respective discipline. 
+
+
+
+
+<div class="box">
+
+**Montana State University** 2024-present
+
+- Investigate the interaction between plant herbivore tolerance and trait-based responses to abiotic stress
+
+</div>
+
+<div class="box">
+
+**Penn State Entomology** 2022-2024
+
+- Manage the entomology component of Common Experiment 2 (16 states) of the Precision Sustainable Agriculture Grant 
+  - Responsibilities include protocol troubleshooting, data collection, whole-team data flow and analyses, and fieldwork
+- Augmentation experiment
+  - Working to quantify the role web-building spiders have as biological control agents in conventional soybeans
+- Agroecosystem health
+  - Partnered with the [Rodale Institute](https://rodaleinstitute.org/) 
+  - Using microarthropods as biological indicators to determine the ecosystem quality of different agricultural practices/ land-uses
+      - E.g., legacy no-till vs. till, organic vs. conventional, etc. 
+
+</div>
+
+<div class="box">
+
+**Penn State Weed Science** 2021-2022
+
+- Managed three projects of the Precision Sustainable Agriculture Grant for [Dr. John Wallace](https://plantscience.psu.edu/directory/jmw309) 
+  - Common Experiment 1 ([CE1](https://www.precisionsustainableag.org/ce1)): Nitrogen Cycling
+  - Common Experiment 2 ([CE2](https://www.precisionsustainableag.org/ce2)): Inter-disciplinary pest interactions
+  - On-Farm ([OF](https://www.precisionsustainableag.org/on-farm)): Implementing similar field management practices from CE1 and 2 with Pennsylvania growers 
+
+</div>
+
+<div class="box">
+
+**Lehigh Agricultural and Biological Services** 2020-2021
+
+</div>

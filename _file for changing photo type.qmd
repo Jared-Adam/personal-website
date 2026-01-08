@@ -1,0 +1,23 @@
+```{r}
+
+library(magick)
+library(tidyverse)
+
+test <- list.files(path = "C:/Users/jsada/LOCAL_DOCUMENTS/repos/personal-website/gallery",
+                   pattern = "\\.heic$", 
+                   full.names = TRUE)
+
+test %>% 
+  map(image_read) %>% 
+  map(image_resize, "800x") %>% 
+  map(image_convert, "jpg") %>% 
+  (\(imgs) walk2(
+    imgs, 
+    str_replace(test, "\\.heic$", ".jpg"), 
+    image_write))
+  ()
+
+
+```
+
+```{r}
