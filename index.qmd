@@ -1,6 +1,6 @@
 ---
 title: "Jared Adam"
-image: "Head shot.jpg" 
+image: files/Headshot.jpg 
 about:
   template: trestles
   id: "blank"

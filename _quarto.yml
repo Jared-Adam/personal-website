@@ -20,7 +20,7 @@ website:
       - href: research.qmd
         text: Research
       - text: "CV"
-        href: Jared.Adam.CV.pdf
+        href: files/Jared.Adam.CV.pdf
       # - href: teaching.qmd
         # text: Teaching     
       - text: "R Tutorial"
