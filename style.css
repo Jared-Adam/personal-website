@@ -212,10 +212,20 @@ $link-color:  steelblue !default;
 
 
 .box-for-text {
-  
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  border: 2px solid #3498db; /* Blue border */
+  background-color: #ecf0f1; /* Light background */
+  padding: 1em;            /* Inner spacing */
+  margin: 1em 0;           /* Spacing above and below the box */
+  border-radius: 5px;      /* Rounded corners */
+}  
   
   
   
   
 }
-}
+
