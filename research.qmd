@@ -19,22 +19,26 @@ title: "Forever in skewl"
 :::
 :::
 
+## A brief overview of my PhD
+
+Broadly, I work on the interaction between abiotic and biotic stress on plants. I am particularly interested in how climate change drives plant physiological changes, and how these changes within the plant affect their interactions with insect-herbivores. Additionally, I am interested in how plants and arthropods in mountainous ecosystems respond to an increase in temperature and drought. To study this, I conduct weekly evaluations of plant and insect populations and herbivory across three elevational gradient transects (two in Gallatin and one in the Spanish Peaks).
+
+## A synthesis of my master's degree 
+
 My master's thesis with Dr. John Tooker ([Tooker lab](https://ento.psu.edu/research/labs/john-tooker)) broadly focused on Integrated Pest Management within conventional row crops. Please see the link to my defense for more information. The most notable project I am still active on (as of 2025) is called the Common Experiment 2 ([CE2](https://www.precisionsustainableag.org/ce2)) which is presently funded by a Precision Sustainable Agriculture grant through the USDA. The focus of this project is pest management of insects, weeds, and disease within conventional corn production and includes 16 collaborating Universities spanning the Southern to Midwestern US from Texas to Vermont. Within this project, my responsibilities include, but are not limited to, serving as the immediate contact for protocol/ entomology-based questions, managing the data flow and analyses for all entomology-related data from all collaborators, and working with the other project leads on the synthesis of each respective discipline. 
 
 
+## CV research sparknotes
 
-:::{.container}
 :::{.box-for-text}
 
 **Montana State University** 2024-present
 
-- Investigate the interaction between plant herbivore tolerance and trait-based responses to abiotic stress
+- Investigate the interaction between plant herbivore tolerance and physiological trait-based responses to abiotic stress
+- Monitor plant and insect communities along environmental gradients
+- Test plant fitness and physiology in the greenhouse 
 
-:::
-:::
-
-:::{.container}
-:::{.box-for-text}
+##
 
 **Penn State Entomology** 2022-2024
 
@@ -47,11 +51,7 @@ My master's thesis with Dr. John Tooker ([Tooker lab](https://ento.psu.edu/resea
   - Using microarthropods as biological indicators to determine the ecosystem quality of different agricultural practices/ land-uses
       - E.g., legacy no-till vs. till, organic vs. conventional, etc. 
 
-:::
-:::
-
-:::{.container}
-:::{.box-for-text}
+##
 
 **Penn State Weed Science** 2021-2022
 
@@ -60,13 +60,10 @@ My master's thesis with Dr. John Tooker ([Tooker lab](https://ento.psu.edu/resea
   - Common Experiment 2 ([CE2](https://www.precisionsustainableag.org/ce2)): Inter-disciplinary pest interactions
   - On-Farm ([OF](https://www.precisionsustainableag.org/on-farm)): Implementing similar field management practices from CE1 and 2 with Pennsylvania growers 
 
-:::
-:::
-
-:::{.container}
-:::{.box-for-text}
+##
 
 **Lehigh Agricultural and Biological Services** 2020-2021
 
-:::
+- Efficacy trials for agrichemicals and insecticides for natural systems 
+
 :::

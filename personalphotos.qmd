@@ -1,0 +1,16 @@
+---
+page-layout: full
+listing:
+  id: listing-gallery
+  template: gallery.ejs
+  contents:
+    - personal_photos/*.jpg
+    - personal_photos/*.png
+    - personal_photos/*.jpeg
+  sort-ui: false
+  filter-ui: false
+  categories: false
+---
+
+::: {#listing-gallery}
+:::

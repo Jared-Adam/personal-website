@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Forever in skewl</title>
+<title>personalphotos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,12 +60,44 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-filename","listing-file-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-gallery'] = new List('listing-listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -138,102 +172,287 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Forever in skewl</h1>
+
+
+<div id="listing-listing-gallery" class="quarto-listing quarto-listing-container-custom">
+<style type="text/css">
+.grid-gallery {
+  columns: 5 200px;
+  column-gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-item {
+  width: 150px;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+}
+img.grid-item {
+  width: 100%;
+  transition: all .25s ease-in-out;
+}
+img.grid-item:hover {
+  transform: scale(1.025);
+}
+</style>
+<div class="grid-gallery">
+<div>
+<p><img src=".\personal_photos\IMG_0063.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0096.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0163.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0185.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0345.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0514.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0697 1.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0697.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0783.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0797.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0872_Original.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_0987.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1068.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1127.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1169.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1284.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1443.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1450.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1548.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_1888.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2010.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2029.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2140.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2194.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2276.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2942.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_2987.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3208.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3299.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3304.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3338.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3723.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3786.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_3932.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_4150.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_4459.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_4460.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_4462.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_5063.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_5584 1.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_5584.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_6463_Original.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_6795.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_6894.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_6904.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_6963.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7104.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7112.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7198.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7220.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7290.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7346.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7361.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_7373.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8140.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8526.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8533.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8620.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8689.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_8710.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_9233.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_9684.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\IMG_9904.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\k11_Original.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\personal_photos\k9_Original.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+</div>
+<script>
+// Run when DOM is ready
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all images marked for lightbox
+  const images = document.querySelectorAll("img.lightbox");
+  // Create the overlay container
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100vw";
+  overlay.style.height = "100vh";
+  overlay.style.background = "rgba(0,0,0,0.8)";
+  overlay.style.display = "none";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "9999";
+  overlay.style.cursor = "zoom-out";
+  // Enlarged image element
+  const overlayImg = document.createElement("img");
+  overlayImg.style.maxWidth = "90%";
+  overlayImg.style.maxHeight = "90%";
+  overlayImg.style.borderRadius = "8px";
+  overlayImg.style.boxShadow = "0 0 20px rgba(0,0,0,0.6)";
+  overlay.appendChild(overlayImg);
+  // Close on click
+  overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+    overlayImg.src = "";
+  });
+  // Add overlay to the page
+  document.body.appendChild(overlay);
+  // Add click listeners to thumbnails
+  images.forEach(img => {
+    img.style.cursor = "zoom-in";
+    img.addEventListener("click", () => {
+      overlayImg.src = img.src;
+      overlay.style.display = "flex";
+    });
+  });
+});
+</script>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-gallery-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<div class="container">
-<div class="custom-box">
-<p><img src="Montana State University.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> <strong>PhD Land Resources and Environmental Sciences</strong>, 2024-present - <em>Montana State University</em></p>
-<p><img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> <strong>MSc Entomology</strong>, 2022-2024 - <em>The Pennsylvania State University</em></p>
-<p><img src="psu.png" alt="University logo" style="width:100px; height: auto; margin-right: 10px;"> <strong>BS Agroecology</strong>, 2015-2019 - <em>The Pennsylvania State University</em></p>
-</div>
-</div>
-</section>
-<section id="a-brief-overview-of-my-phd" class="level2">
-<h2 class="anchored" data-anchor-id="a-brief-overview-of-my-phd">A brief overview of my PhD</h2>
-<p>Broadly, I work on the interaction between abiotic and biotic stress on plants. I am particularly interested in how climate change drives plant physiological changes, and how these changes within the plant affect their interactions with insect-herbivores. Additionally, I am interested in how plants and arthropods in mountainous ecosystems respond to an increase in temperature and drought. To study this, I conduct weekly evaluations of plant and insect populations and herbivory across three elevational gradient transects (two in Gallatin and one in the Spanish Peaks).</p>
-</section>
-<section id="a-synthesis-of-my-masters-degree" class="level2">
-<h2 class="anchored" data-anchor-id="a-synthesis-of-my-masters-degree">A synthesis of my master’s degree</h2>
-<p>My master’s thesis with Dr.&nbsp;John Tooker (<a href="https://ento.psu.edu/research/labs/john-tooker">Tooker lab</a>) broadly focused on Integrated Pest Management within conventional row crops. Please see the link to my defense for more information. The most notable project I am still active on (as of 2025) is called the Common Experiment 2 (<a href="https://www.precisionsustainableag.org/ce2">CE2</a>) which is presently funded by a Precision Sustainable Agriculture grant through the USDA. The focus of this project is pest management of insects, weeds, and disease within conventional corn production and includes 16 collaborating Universities spanning the Southern to Midwestern US from Texas to Vermont. Within this project, my responsibilities include, but are not limited to, serving as the immediate contact for protocol/ entomology-based questions, managing the data flow and analyses for all entomology-related data from all collaborators, and working with the other project leads on the synthesis of each respective discipline.</p>
-</section>
-<section id="cv-research-sparknotes" class="level2">
-<h2 class="anchored" data-anchor-id="cv-research-sparknotes">CV research sparknotes</h2>
-<div class="box-for-text">
-<p><strong>Montana State University</strong> 2024-present</p>
-<ul>
-<li>Investigate the interaction between plant herbivore tolerance and physiological trait-based responses to abiotic stress</li>
-<li>Monitor plant and insect communities along environmental gradients</li>
-<li>Test plant fitness and physiology in the greenhouse</li>
-</ul>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<p><strong>Penn State Entomology</strong> 2022-2024</p>
-<ul>
-<li>Manage the entomology component of Common Experiment 2 (16 states) of the Precision Sustainable Agriculture Grant
-<ul>
-<li>Responsibilities include protocol troubleshooting, data collection, whole-team data flow and analyses, and fieldwork</li>
-</ul></li>
-<li>Augmentation experiment
-<ul>
-<li>Working to quantify the role web-building spiders have as biological control agents in conventional soybeans</li>
-</ul></li>
-<li>Agroecosystem health
-<ul>
-<li>Partnered with the <a href="https://rodaleinstitute.org/">Rodale Institute</a></li>
-<li>Using microarthropods as biological indicators to determine the ecosystem quality of different agricultural practices/ land-uses
-<ul>
-<li>E.g., legacy no-till vs.&nbsp;till, organic vs.&nbsp;conventional, etc.</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1"></h2>
-<p><strong>Penn State Weed Science</strong> 2021-2022</p>
-<ul>
-<li>Managed three projects of the Precision Sustainable Agriculture Grant for <a href="https://plantscience.psu.edu/directory/jmw309">Dr.&nbsp;John Wallace</a>
-<ul>
-<li>Common Experiment 1 (<a href="https://www.precisionsustainableag.org/ce1">CE1</a>): Nitrogen Cycling</li>
-<li>Common Experiment 2 (<a href="https://www.precisionsustainableag.org/ce2">CE2</a>): Inter-disciplinary pest interactions</li>
-<li>On-Farm (<a href="https://www.precisionsustainableag.org/on-farm">OF</a>): Implementing similar field management practices from CE1 and 2 with Pennsylvania growers</li>
-</ul></li>
-</ul>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2"></h2>
-<p><strong>Lehigh Agricultural and Biological Services</strong> 2020-2021</p>
-<ul>
-<li>Efficacy trials for agrichemicals and insecticides for natural systems</li>
-</ul>
-</section>
-</div>
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
