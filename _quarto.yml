@@ -17,8 +17,8 @@ website:
     right:
       - href: aboutme.qmd
         text: "About Me"
-      - href: research.qmd
-        text: Research
+      #- href: research.qmd
+      #  text: "Research Experience"
       - href: recruitment.qmd
         text: "Join us"
       - text: "CV"
@@ -33,6 +33,8 @@ website:
           href: researchphotos.qmd
         - text: "Personal photos"
           href: personalphotos.qmd
+        - text: "Plants and Arthropods"
+          href: plant_insect.qmd
       - text: "Example Presentation"
         href: files/EasternESA.pdf
       - text: "Master's Defense Recording"

@@ -4,9 +4,9 @@ listing:
   id: listing-gallery
   template: gallery.ejs
   contents:
-    - gallery/*.jpg
-    - gallery/*.jpeg
-    - gallery/*.png
+    - p-i_photos/*.jpg
+    - p-i_photos/*.png
+    - p-i_photos/*.jpeg
   sort-ui: false
   filter-ui: false
   categories: false
