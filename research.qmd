@@ -13,6 +13,17 @@
 :::
 :::
 
+## Current research 
+
+Plant-insect interactions are threatened by global environmental change. While some changes may be positive, there is great concern about plant and insect declines due to increases in both abiotic stress and changes in biotic interactions. Within this dissertation, I plan to study how plants tolerate the dual threat of abiotic and biotic stress. Using **Collinsia parviflora**, an annual wildflower, I will investigate the effects of dual stress, with the goal of making population level predictions about future plant-insect interactions. My preliminary greenhouse and field data suggest that plant responses to herbivory vary and that elevation plays a key role in herbivore distribution, and by default, plant responses. 
+
+
+
+
+
+
+
+
 ## A brief overview of my PhD
 
 Broadly, I work on the interaction between abiotic and biotic stress on plants. I am particularly interested in how climate change drives plant physiological changes, and how these changes within the plant affect their interactions with insect-herbivores. Additionally, I am interested in how plants and arthropods in mountainous ecosystems respond to an increase in temperature and drought. To study this, I conduct weekly evaluations of plant and insect populations and herbivory across three elevational gradient transects (two in Gallatin and one in the Spanish Peaks).
