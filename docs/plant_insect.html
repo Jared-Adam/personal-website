@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jared Adam</title>
+<title>plant_insect</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -57,12 +60,44 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-filename","listing-file-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-gallery'] = new List('listing-listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -75,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Jared Adam</span></a>
   </li>  
 </ul>
@@ -141,58 +176,247 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles page-columns page-full">
-  <div class="about-entity">
-    <img src="files/Headshot.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Jared Adam</h1>
+<main class="content column-page" id="quarto-document-content">
+
+
+
+<div id="listing-listing-gallery" class="quarto-listing quarto-listing-container-custom">
+<style type="text/css">
+.grid-gallery {
+  columns: 5 200px;
+  column-gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-item {
+  width: 150px;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+}
+img.grid-item {
+  width: 100%;
+  transition: all .25s ease-in-out;
+}
+img.grid-item:hover {
+  transform: scale(1.025);
+}
+</style>
+<div class="grid-gallery">
+<div>
+<p><img src=".\p-i_photos\20210517_211734450_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://github.com/Jared-Adam" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.linkedin.com/in/jared-adam-24b107241/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="mailto:jsadam0809@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-fill"></i>
-     <span class="about-link-text">Email</span>
-  </a>
+<div>
+<p><img src=".\p-i_photos\20210610_151807454_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
 </div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div class="column-page">
-<div class="gradient-text">
-<div class="welcome-headline">
-<p>In search of causes; getting bogged down by correlations.<br></p>
+<div>
+<p><img src=".\p-i_photos\20210618_114633882_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
 </div>
-<div class="welcome-subheadline">
-<p>A brief introduction of me.</p>
+<div>
+<p><img src=".\p-i_photos\20210709_160010054_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210709_164914310_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210825_150126223_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210830_170704010_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210907_175115327_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210926_173352044_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20210928_150007940_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20211005_134825237_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220403_231133643_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220415_141520004_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220415_141535851_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220724_141259675_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220726_134627078_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220728_144338054_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220816_155757783_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220818_114512425_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220903_171730079_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220906_200430119_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220909_122734658_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220913_205500520_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220928_125750974_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20220928_133446707_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20221010_121501305_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20221010_122138941_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20221103_145112000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230418_124805000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230503_192159000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230503_194433000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230504_130443000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230526_113348784_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20230604_145513140_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20240307_005318000_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20240814_194047340_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20240908_162700407_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20250703_170651639_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\20250813_112017540_iOS.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_3208.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_6894.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_6904.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_6963.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7104.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7112.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7198.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7220.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7290.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7346.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7361.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
+</div>
+<div>
+<p><img src=".\p-i_photos\IMG_7373.jpg" class="grid-item lightbox img-fluid" loading="lazy" data-group="quarto-grid-gallery"></p>
 </div>
 </div>
-<div class="grid">
-<div class="g-col-12 g-col-lg-10 welcome-text sand-background" style="padding: 15px;">
-<p>My name is Jared Seneca Adam and I currently reside in Montana, where I spend most of my time running around the woods and clambering up rocks, all while looking at, and for, <strong>plants and arthropods</strong>. At present, I am a PhD student at Montana State University, where I study <strong>plant-arthropod interactions.</strong> I am deeply interested in population dynamics and the use modeling to understand the role of plant traits in response to <strong>abiotic and biotic stress.</strong> Additionally, I am fascinated by <em>causation</em> and am working to broaden my understanding of cause and effect, the role of <strong>cause and effect in Ecology</strong>, the age-old debate of <em>Frequentsit vs.&nbsp;Bayesian</em>, how we can use <strong>both</strong> of these pools of statistical thinking to produce appropriate models, and how we can train Ecologists both <strong>maximum likelihood and probability-based modeling</strong> to ensure our science is sound as we work to answer harder questions in an <em>ever-changing environment</em>.</p>
+<script>
+// Run when DOM is ready
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all images marked for lightbox
+  const images = document.querySelectorAll("img.lightbox");
+  // Create the overlay container
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100vw";
+  overlay.style.height = "100vh";
+  overlay.style.background = "rgba(0,0,0,0.8)";
+  overlay.style.display = "none";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "9999";
+  overlay.style.cursor = "zoom-out";
+  // Enlarged image element
+  const overlayImg = document.createElement("img");
+  overlayImg.style.maxWidth = "90%";
+  overlayImg.style.maxHeight = "90%";
+  overlayImg.style.borderRadius = "8px";
+  overlayImg.style.boxShadow = "0 0 20px rgba(0,0,0,0.6)";
+  overlay.appendChild(overlayImg);
+  // Close on click
+  overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+    overlayImg.src = "";
+  });
+  // Add overlay to the page
+  document.body.appendChild(overlay);
+  // Add click listeners to thumbnails
+  images.forEach(img => {
+    img.style.cursor = "zoom-in";
+    img.addEventListener("click", () => {
+      overlayImg.src = img.src;
+      overlay.style.display = "flex";
+    });
+  });
+});
+</script>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
-</div>
+<nav id="listing-gallery-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
-</main></div>
-</div>
- <!-- /main -->
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -213,6 +437,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
